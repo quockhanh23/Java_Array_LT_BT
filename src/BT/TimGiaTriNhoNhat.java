@@ -8,14 +8,14 @@ public class TimGiaTriNhoNhat {
         int[] array;
         Scanner scan = new Scanner(System.in);
         do {
-            System.out.println("Nhập tổng số phần tử ");
+            System.out.println("Nhập số lượng phần tử ");
             size = scan.nextInt();
-            System.out.println("Số phần tử muốn nhập của bạn là :" + size);
-            if (size > 20) {
-                System.out.println("size nhỏ hơn 20 ");
+            System.out.println("Số phần tử bạn nhập là :" + size);
+            if (size > 10) {
+                System.out.println("Số phần tử phải nhỏ hơn:  10 ");
             }
-        } while (size > 20);
-        array  = new  int[size];
+        } while (size > 10);
+        array = new int[size];
         int i = 0;
         while (i < array.length) {
 
@@ -38,6 +38,6 @@ public class TimGiaTriNhoNhat {
             }
 
         }
-        System.out.println("Phần tử nhỏ nhất là : "+ min);
+        System.out.println("Phần tử nhỏ nhất là : " + min);
     }
 }
