@@ -1,21 +1,21 @@
-package BT;
+package com.company;
 
 import java.util.Scanner;
 
-public class TimGiaTriNhoNhat {
+public class THGiaTriLonNhat {
     public static void main(String[] args) {
         int size;
         int[] array;
         Scanner scan = new Scanner(System.in);
-        do {
-            System.out.println("Nhập số lượng phần tử ");
-            size = scan.nextInt();
-            System.out.println("Số phần tử bạn nhập là :" + size);
-            if (size > 10) {
-                System.out.println("Số phần tử phải nhỏ hơn:  10 ");
-            }
-        } while (size > 10);
-        array = new int[size];
+      do {
+          System.out.println("Nhập tổng số phần tử ");
+          size = scan.nextInt();
+          System.out.println("Số phần tử muốn nhập của bạn là :" + size);
+          if (size > 20) {
+              System.out.println("size nhỏ hơn 20 ");
+          }
+      } while (size > 20);
+      array  = new  int[size];
         int i = 0;
         while (i < array.length) {
 
@@ -29,15 +29,21 @@ public class TimGiaTriNhoNhat {
             System.out.print(array[j] + "\t");
         }
 
-        int min = array[0];
+        int max = array[0];
         int index = 1;
         for (int j = 0; j < array.length; j++) {
-            if (array[j] < min) {
-                min = array[j];
+            if (array[j] > max) {
+                max = array[j];
                 index = j + 1;
             }
 
         }
-        System.out.println("Phần tử nhỏ nhất là : " + min);
+        System.out.println("Phần tử lớn nhất là : "+ max);
     }
-}
+    }
+
+
+
+
+
+

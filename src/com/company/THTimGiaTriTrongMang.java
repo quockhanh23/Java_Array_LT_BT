@@ -2,22 +2,22 @@ package com.company;
 
 import java.util.Scanner;
 
-public class TimGiaTriTrongMang {
+public class THTimGiaTriTrongMang {
     public static void main(String[] args) {
-        String[] students = {"kuku", "Michael","xen"};
+        String[] students = {"kuku", "mai cồ","xen","xiao"};
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter a name 's student");
+        System.out.println("Nhập tên học sinh muốn tìm :");
         String input_name = scan.nextLine();
         boolean isExist = false;
         for (int i = 0; i < students.length; i++) {
             if (students[i].equals(input_name)) {
-                System.out.println("Position of the students in the list " + input_name + " is: " + i);
+                System.out.println("Số thứ tự của học sinh " + input_name + " là: " + (i + 1));
                 isExist = true;
                 break;
             }
         }
         if (!isExist) {
-            System.out.println("Not found" + input_name + " in the list.");
+            System.out.println("Không tìm thấy" + input_name + " trong danh sách.");
         }
     }
 }

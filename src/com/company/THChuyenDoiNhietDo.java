@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class ChuyenDoiNhietDo {
+public class THChuyenDoiNhietDo {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         double fahrenheit;

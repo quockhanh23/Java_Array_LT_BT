@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class DaoNguocMang {
+public class THDaoNguocMang {
 
     public static void main(String[] args) {
         int size;
