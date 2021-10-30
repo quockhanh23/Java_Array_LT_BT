@@ -1,8 +1,11 @@
 package BT_mang;
 
+import java.util.Scanner;
+
 public class TimVitri {
 
         public static void main(String[] args) {
+          
             int[] arr = {1,7,5,6,2,9,8,-1};
             int x = 5;
             int ViTri = searchElement(arr, x);
